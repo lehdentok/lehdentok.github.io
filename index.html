@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title>Leh den tok: kam mek we tɔk bɔt ICT na Salon!</title>
+<meta name="description" content="Leh den tok is a place where you can connect with other young Sierra Leoneans to talk and learn about technology in Krio." /> <!-- Translate this to Krio...! -->
+
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="0" />
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="cleartype" content="on" />
+
+<style>
+@charset 'UTF-8';
+
+@import url(http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css);
+
+@-webkit-viewport	{ width: device-width; }
+@-ms-viewport	{ width: device-width; }
+@-moz-viewport	{ width: device-width; }
+@-o-viewport		{ width: device-width; }
+@viewport		{ width: device-width; }
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/* outline: 1px solid red; */
+}
+
+html {
+	/* Base background color a subtle yellow to warm up the green and blue of the Salone flag colours in the gradient */
+	background-color: #fffff8; }
+/* Thank heavens for ColorZilla :)
+	http://www.colorzilla.com/gradient-editor/#1eb53a+0,ffffff+33,ffffff+67,0072c6+100&0.05+0,0.3+33,0.3+67,0.15+100;Custom  */
+html.lt-ie9 {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1eb53a', endColorstr='#260072c6',GradientType=0 ); /* IE6-8 */ }
+html.ie9 {
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' [unless only applying] */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlYjUzYSIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjMzJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iNjclIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMyIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDA3MmM2IiBzdG9wLW9wYWNpdHk9IjAuMTUiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==); }
+html {
+	background: -moz-linear-gradient(top, rgba(30,181,58,0.05) 0%, rgba(255,255,255,0.3) 33%, rgba(255,255,255,0.3) 67%, rgba(0,114,198,0.15) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,181,58,0.05)), color-stop(33%,rgba(255,255,255,0.3)), color-stop(67%,rgba(255,255,255,0.3)), color-stop(100%,rgba(0,114,198,0.15))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(30,181,58,0.05) 0%,rgba(255,255,255,0.3) 33%,rgba(255,255,255,0.3) 67%,rgba(0,114,198,0.15) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(30,181,58,0.05) 0%,rgba(255,255,255,0.3) 33%,rgba(255,255,255,0.3) 67%,rgba(0,114,198,0.15) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(30,181,58,0.05) 0%,rgba(255,255,255,0.3) 33%,rgba(255,255,255,0.3) 67%,rgba(0,114,198,0.15) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(30,181,58,0.05) 0%,rgba(255,255,255,0.3) 33%,rgba(255,255,255,0.3) 67%,rgba(0,114,198,0.15) 100%); /* W3C */
+}
+
+html {
+	/* RGB colours taken from http://en.wikipedia.org/wiki/File:Flag_of_Sierra_Leone.svg */
+	background-image: linear-gradient(rgba(30, 181, 58, 0.05) /*#1EB53A*/, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 114, 198, 0.15) /*#0072C6*/);
+	background-attachment: fixed;
+	color: #111;
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+	font-size: 200%;
+	line-height: 1.333;
+	min-height: 100%;
+}
+
+body {
+	margin: .333rem;
+}
+
+span.emd::before, span.emd::after {
+	content: '\200A';  /* hair space */
+	display: inline-block;
+	visibility: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+	max-width: 30em;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, form {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-weight: 300;
+	line-height: 3.333rem;
+	margin: .5em 0 0 0;
+}
+
+h1 img#logo {
+	display: inline-block;
+	width: 2em;
+	vertical-align: bottom;
+}
+
+p, li {
+	line-height: 1.667rem;
+	text-align: center;
+	margin: 1.333rem auto;
+}
+
+img[src=""] {
+	visibility: hidden;
+}
+
+section, ul {
+	text-align: center;
+}
+
+section:first-of-type p {
+	max-width: 20em;
+}
+
+section + section, section li + li {
+	margin-top: 4.5rem;
+	position: relative;
+}
+
+section + section::before, section li + li::before {
+	color: #333;
+	font-size: 2em;
+	left: 50%;
+	position: absolute;
+	text-shadow: none;
+	top: -3.5rem;
+}
+
+section + section::before {
+	content: '⇓';
+	margin-left: -.3em;
+}
+
+section li + li::before {
+	content: '⋮';
+	margin-left: -.2em;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+section li {
+	color: #eee;
+	background-color: rgba(0, 114, 198, 0.6);
+	border-radius: .5em;
+	padding: 0 .5em;
+	text-shadow: #0072c6 0 0 20px;
+}
+
+section li:nth-of-type(1) {
+	background-color: rgba(28, 176, 69, 0.6);
+	max-width: 25em;
+	text-shadow: #1cb045 0 0 20px;
+}
+
+section li:nth-of-type(2) {
+	background-color: rgba(18, 155, 112, 0.6);
+	max-width: 20em;
+	text-shadow: #129b70 0 0 20px;
+}
+
+section li:nth-of-type(3) {
+	background-color: rgba(9, 135, 155, 0.6);
+	max-width: 23em;
+	text-shadow: #09879b 0 0 20px;
+}
+
+section li:nth-of-type(4) {
+	max-width: 24em;
+}
+
+blockquote::before {
+	content: '❝\00A0';
+}
+
+blockquote::after {
+	content: '\00A0❞';
+}
+
+form input {
+	max-width: 85%;
+}
+
+form blockquote input {
+	width: 20em;
+}
+
+form p:last-of-type, form p:nth-of-type(n-1) {
+	margin: 0 auto;
+	padding: 0;
+}
+
+button {
+	position: relative;
+}
+
+button:before {
+	content: 'Coming soon!';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	font-family: 'Special Elite', cursive;
+	color: red;
+	-webkit-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+small li {
+	display: inline-block;
+	margin: 0 .5em;
+}
+</style>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+<section>
+	<h1><img id="logo" src="http://upload.wikimedia.org/wikipedia/commons/e/ed/SVG-Koort_Sierra_Leone.svg" alt="" /> Leh&nbsp;den&nbsp;tok</h1>
+	<p>… a place to talk and learn about what you can do with technology<span class="emd">—</span>in your language.</p>
+</section>
+<section id="whatdoyouwant">
+	<form>
+		<p><del>What do <em>you</em> want to do with technology?</del></p>
+		<blockquote><label>I’d like to… <input disabled name="wish" /></label></blockquote>
+		<p><button disabled>Have your say!</button></p>
+	</form>
+</section>
+<section>
+	<ul>
+		<li><img class="illustration" alt="" src="" />Building a community of young Sierra Leoneans interested in technology and the Internet, enabling them to connect with each other to make exciting things happen.</li>
+		<li><img class="illustration" alt="" src="" />Bringing together resources to help you learn about what you can do with technology.</li>
+		<li><img class="illustration" alt="" src="" />Organising classes and seminars so that you can meet other young people interested in technology face-to-face and learn from experts and your peers.</li>
+		<li><img class="illustration" alt="" src="" />Bringing affordable computing to Sierra Leone by importing laptops and other devices at a low price.</li>
+	</ul>
+</section>
+<section id="invitation">
+	<form>
+		<p>Be invited to join <em>Leh den tok</em> when we launch! <del>Enter your email address:</del> <input disabled type="email" /></p>
+		<p><button disabled>Subscribe</button></p>
+	</form>
+</section>
+<footer>
+	<small>
+		<ul>
+		<!--	<li><a href="copyright">Copyright</a></li>
+			<li><a href="terms">Terms &amp; conditions</a></li>
+			<li><a href="privacy">Privacy policy</a></li>
+			<li><a href="colophon">Colophon</a></li>  -->
+			<li><span class="icon icon-twitter-sign"></span><a href="https://twitter.com/lehdentok">@lehdentok</a></li>
+			<li><span class="icon icon-facebook-sign"></span><a href="https://www.facebook.com/lehdentok">/lehdentok</a></li>
+		</ul>
+	</small>
+</footer>
+<script>
+	var _gaq=[['_setAccount','UA-40107234-1'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src='//www.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>
