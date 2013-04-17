@@ -14,6 +14,13 @@
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="cleartype" content="on" />
 
+<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" />
+<style>
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
 <style>
 @charset 'UTF-8';
 
@@ -38,6 +45,7 @@ html {
 	/* Base background color a subtle yellow to warm up the green and blue of the Salone flag colours in the gradient */
 	background-color: #fffff8; }
 /* Thank heavens for ColorZilla :)
+	RGB colours taken from http://en.wikipedia.org/wiki/File:Flag_of_Sierra_Leone.svg
 	http://www.colorzilla.com/gradient-editor/#1eb53a+0,ffffff+33,ffffff+67,0072c6+100&0.05+0,0.3+33,0.3+67,0.15+100;Custom  */
 html.lt-ie9 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1eb53a', endColorstr='#260072c6',GradientType=0 ); /* IE6-8 */ }
@@ -54,8 +62,6 @@ html {
 }
 
 html {
-	/* RGB colours taken from http://en.wikipedia.org/wiki/File:Flag_of_Sierra_Leone.svg */
-	background-image: linear-gradient(rgba(30, 181, 58, 0.05) /*#1EB53A*/, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 114, 198, 0.15) /*#0072C6*/);
 	background-attachment: fixed;
 	color: #111;
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
@@ -237,10 +243,34 @@ small li {
 	</ul>
 </section>
 <section id="invitation">
-	<form>
+	<!--<form>
 		<p>Be invited to join <em>Leh den tok</em> when we launch! <del>Enter your email address:</del> <input disabled type="email" /></p>
 		<p><button disabled>Subscribe</button></p>
+	</form>-->
+
+	<!-- Begin MailChimp Signup Form -->
+	<div id="mc_embed_signup">
+	<form action="http://lehdentok.us4.list-manage1.com/subscribe/post?u=130284558117c3f30b2ae542f&amp;id=01371910ce" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<h2>Subscribe to our mailing list</h2>
+		<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+		<div class="mc-field-group">
+			<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+		</div>
+		<div class="mc-field-group">
+			<label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
+			<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" />
+		</div>
+		<div id="mce-responses" class="clear">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+		</div>
+		<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
 	</form>
+	</div>
+
+	<!--End mc_embed_signup-->
+
 </section>
 <footer>
 	<small>
