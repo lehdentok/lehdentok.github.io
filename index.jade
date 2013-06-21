@@ -1,0 +1,90 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Leh den tok
+    meta(name='description', content='')
+    meta(name='author', content='')
+    meta(name='viewport', content='width=device-width')
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    script(src='/js/jquery.min.js', type='text/javascript')
+    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css')
+    // != styleLink('/css/bootstrap.min.css', {rel:'stylesheet'})
+    // != styleLink('/css/bootstrap.responsive.min.css', {rel:'stylesheet'})
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.min.css')
+    link(href='css/style.css', rel='stylesheet')
+    // The fav and touch icons
+    link(rel='shortcut icon', href='/images/favicon.ico')
+    link(rel='apple-touch-icon', href='images/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='images/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
+  body
+    header
+      nav
+        ul
+          li
+            a.logo(href='/')
+              img(src='img/logo-0.2-256.png', alt='Home')
+          li.disabled
+            span(href='/products') Products
+          li.disabled
+            span(href='/talkingpoint') Talking point
+          li.disabled
+            span(href='/advice') Tech advice
+          li.disabled
+            span(href='/plans') Our plans
+          li.disabled
+            span(href='/about') About us
+          li.disabled
+            span(href='/contact') Contact us
+    main.hero-unit
+      link(href='/css/auth-buttons.css', rel='stylesheet')
+      .hgroup
+        h1
+          img(src='img/logo-0.2-256.png', alt='')
+          |  Leh den tok!
+        h2 Technology for people—connecting people with technology
+      p#tools-topics-question
+        | In Sierra Leone, how could 
+        span.tools(data-typer-targets='better information,mobiles,laptops,the Internet,technology,text messaging,email') technology
+        |  make 
+        span.topics(data-typer-targets='farming,trade,games,entertainment,literacy,reading,equality,learning,news,transport,trade,malaria,reconciliation,water and sanitation') literacy 
+        |  better?
+      p
+        | Have your say!
+        a.btn-auth.btn-facebook.small(href='http://0.0.0.0:4246/auth/facebook') Log in with Facebook
+      p
+        strong Here is what we are doing:
+      ul
+        li
+          | Building a community of young Sierra Leoneans interested in  technology and the Internet, enabling them to connect with each other to make exciting things happen.
+        li
+          | Bringing together resources to help you learn about what you can do with technology.
+        li
+          a(href='/products') Bringing affordable computing
+          | to Sierra Leone by importing laptops and other devices.
+      h3 Leh den tok lets you have your say.
+      p
+        | What do you want to do with technology?
+        | What can technology do for you?
+      p
+        a(href='http://www.facebook.com/lehdentok')
+          span.icon-facebook
+          | /lehdentok
+        |  | 
+        a(href='https://twitter.com/lehdentok')
+          span.icon-twitter
+          | @lehdentok
+        |  | 
+        a(href='mailto:morris@lehdentok.com')
+          span.icon-envelope
+          | morris@lehdentok.com
+      script(src='//raw.github.com/layervault/jquery.typer.js/master/src/jquery.typer.js')
+      script
+        $.typer.options.clearDelay = 1500;
+        $.typer.options.typeDelay = 700;
+        $.typer.options.typeSpeed = 100;
+        $.typer.options.typerInterval = 2500;
+        $.typer.options.highlightSpeed = 100;
+        $('[data-typer-targets]').typer();

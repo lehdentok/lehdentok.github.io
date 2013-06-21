@@ -42,6 +42,11 @@ header li a, header li a:visited {
   text-decoration: none;
 }
 
+header li.disabled a, header li.disabled a:visited {
+  background-color: #a0a0a0; /* light grey */
+  color: #eee;
+}
+
 a.logo, a.logo:hover, a.logo:visited {
   background-color: inherit;
   color: inherit;
