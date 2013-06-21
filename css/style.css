@@ -1,0 +1,109 @@
+@charset 'UTF-8';
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+/*	background-color: #f4e9ff;
+	background-color: #6600fc; */
+	background-color: #fffff8;
+	letter-spacing: 1px;
+	padding: 0 .1em;
+	text-align: center;
+}
+
+body {
+	font: 300 150%/1.4 Helvetica Neue, Open Sans, sans-serif;
+}
+
+html, body, header, main, nav, footer, ul, li {
+  line-height: 1.2;
+}
+
+header ul {
+  line-height: 2;
+  font-size: 90%;
+  max-width: none;
+}
+
+header ul, header li {
+  display: inline-block;
+  padding: 0 .5em;
+}
+
+header li a, header li a:visited {
+  background-color: #6f004b;
+  color: #eee;
+  border-radius: .5em;
+  padding: .25em;
+  text-decoration: none;
+}
+
+a.logo, a.logo:hover, a.logo:visited {
+  background-color: inherit;
+  color: inherit;
+}
+
+a.logo img {
+  width: 2em;
+  margin-bottom: -.65em;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 100;
+  margin-top: -.25em;
+}
+
+h1 img {
+	display: inline-block;
+	position: relative;
+	width: 1.2em;
+	bottom: -.25em;
+}
+
+h2 {
+  margin-top: -1.5em;
+}
+
+p#tools-topics-question {
+  min-height: 3em;
+}
+
+p#tools-topics-question span.tools,
+p#tools-topics-question span.topics {
+	color: #6f004b;
+	display: inline-block;
+	font-family: Consolas, Menlo, Inconsolata, Monaco, monospace;
+	font-weight: normal;
+  -webkit-text-size-adjust: auto;
+  -ms-text-size-adjust: auto;
+  text-size-adjust: auto;
+}
+
+main a.btn-auth.btn-facebook.small {
+  vertical-align: text-bottom;
+}
+
+main ul {
+  max-width: none;
+}
+
+main li {
+  display: inline-block;
+  list-style-type: none;
+  width: 15em;
+}
