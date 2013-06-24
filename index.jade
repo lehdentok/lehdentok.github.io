@@ -8,7 +8,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width')
     //if lt IE 9
       script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
     link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css')
     //- != styleLink('/css/bootstrap.min.css', {rel:'stylesheet'})
     //- != styleLink('/css/bootstrap.responsive.min.css', {rel:'stylesheet'})
@@ -21,7 +21,7 @@ html(lang='en')
     link(rel='apple-touch-icon', sizes='114x114', href='images/apple-touch-icon-114x114.png')
   body
     header
-      nav
+      //- nav
         ul
           li
             a.logo(href='/')
@@ -64,12 +64,14 @@ html(lang='en')
         li
           | Bringing together resources to help you learn about what you can do with technology.
         li
-          a(href='/products') Bringing affordable computing
-          |  to Sierra Leone by importing laptops and other devices.
-      h3 Leh den tok lets you have your say.
+          //- a(href='/products')
+          | Bringing affordable computing to Sierra Leone by importing laptops and other devices.
+      //- h3 Leh den tok lets you have your say.
+      //- p What do you want to do with technology? What can technology do for you?
       p
-        | What do you want to do with technology?
-        | What can technology do for you?
+        strong Enter your email address for updates:
+      include partials/mailchimpform
+    footer
       p
         span.icon-facebook.icon-small
         |  
@@ -81,7 +83,7 @@ html(lang='en')
         |  | 
         span.icon-envelope.icon-small
         |  
-        a(href='mailto:morris@lehdentok.com') morris@lehdentok.com
+        a(href='mailto:kushe@lehdentok.com') kushe@lehdentok.com
       script(src='http://raw.github.com/layervault/jquery.typer.js/master/src/jquery.typer.js')
       script
         $.typer.options.clearDelay = 1500;

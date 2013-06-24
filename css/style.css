@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 h1 {
   font-size: 4em;
   font-weight: 100;
-  margin-top: -.25em;
+  margin-top: -.1em;
 }
 
 h1 img {
@@ -143,10 +143,22 @@ main a.cta .icon-facebook-sign {
 
 main ul {
   max-width: none;
+  padding: 0;
 }
 
 main li {
   display: inline-block;
   list-style-type: none;
-  width: 15em;
+  max-width: 15em;
+  padding: .5em;
+  
+}
+
+form .asterisk {
+  color: red;
+  display: inline-block;
+  font-size: 2em;
+  line-height: .5;
+  margin-bottom: -.1em;
+  position: relative;
 }

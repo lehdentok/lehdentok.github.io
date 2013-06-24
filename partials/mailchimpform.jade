@@ -1,0 +1,51 @@
+form#mc-embedded-subscribe-form.validate(action='http://lehdentok.us4.list-manage1.com/subscribe/post?u=130284558117c3f30b2ae542f&id=01371910ce', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+  //- p.indicates-required
+    span.asterisk *
+    |  indicates required
+  p
+    label(for='mce-EMAIL')
+      | Email address 
+      span.asterisk *
+      |  
+      input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder='fatmata@lehdentok.com')
+  p
+    label(for='mce-FNAME')
+      | First name 
+      span.asterisk *
+      |  
+      input#mce-FNAME.required(type='text', value='', name='FNAME', placeholder='Fatmata')
+  //-
+    label(for='mce-LNAME') Last name 
+      small (optional)
+    input#mce-LNAME(type='text', value='', name='LNAME')
+    label(for='mce-MOBILE') Mobile phone 
+      small (optional)
+    input#mce-MOBILE(type='text', name='MOBILE', value='')
+    label(for='mce-LOCALITY') Town/city/village 
+    input#mce-LOCALITY(type='text', value='', name='LOCALITY')
+    strong Gender 
+      small (optional)
+    ul
+      li
+        input#mce-GENDER-0(type='radio', value='Female', name='GENDER')
+        label(for='mce-GENDER-0') Female
+      li
+        input#mce-GENDER-1(type='radio', value='Male', name='GENDER')
+        label(for='mce-GENDER-1') Male
+      li
+        input#mce-GENDER-2(type='radio', value='Other', name='GENDER')
+        label(for='mce-GENDER-2') Other
+      li
+        input#mce-GENDER-3(type='radio', value='Prefer not to say', name='GENDER')
+        label(for='mce-GENDER-3') Prefer not to say
+    label(for='mce-AGE') What’s your age? 
+    input#mce-AGE(type='number', name='AGE', value='')
+    label(for='mce-LANGUAGE') Preferred language 
+    select#mce-LANGUAGE(name='LANGUAGE')
+      option(value='')
+      option(value='Krio') Krio
+      option(value='Mende') Mende
+      option(value='Themne') Themne
+      option(value='English') English
+  p
+    input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
